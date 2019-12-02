@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/06fd106d7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar-header navbar-center">
+    <nav class="navbar navbar-dark bg-dark" id="myBar">
+        <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
+    </nav>
+    </div>
+<div id="container">
+    <div id="sideBar">
+    <form class="form-inline">
+            <input class="form-control" id="city" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary btn-md form-control" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+    <div class="buttons btn-group-vertical"></div>
+    </div>
+    
+
+
+
+    <div class="weatherDisplay">
+    <div class="header"><h3 class="cityName">City Name: </h3><div id="date"><img id="icon"></div></div>
+    <p class="temperature">Temperature: </p>
+    <p class="humidity">Humidity: </p>
+    <p class="wind">Wind Speed: </p>
+    <div class="uv">UV Index: <div id="scale"></div></div>
+    </div>
+
+
+    <div id="fiveDay"></div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
