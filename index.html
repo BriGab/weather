@@ -14,7 +14,9 @@
         <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
     </nav>
     </div>
-<div id="container">
+<div class="container-fluid" id="container">
+<div class="row">
+    <div class="col-3">
     <div id="sideBar">
     <form class="form-inline">
             <input class="form-control" id="city" type="search" placeholder="Search" aria-label="Search">
@@ -22,21 +24,64 @@
     </form>
     <div class="buttons btn-group-vertical"></div>
     </div>
-    
-
-
-
-    <div class="weatherDisplay">
-    <div class="header"><h3 class="cityName">City Name: </h3><div id="date"><img id="icon"></div></div>
-    <p class="temperature">Temperature: </p>
-    <p class="humidity">Humidity: </p>
-    <p class="wind">Wind Speed: </p>
-    <div class="uv">UV Index: <div id="scale"></div></div>
     </div>
 
 
-    <div id="fiveDay"></div>
-
+    <div class="col-9">
+        <div class="row">
+            <div class="col-12">
+    <div class="weatherDisplay">
+        <div class="header"><h3 class="cityName">City Name: </h3><div id="date"><img id="icon"></div></div>
+        <p class="temperature">Temperature: </p>
+        <p class="humidity">Humidity: </p>
+        <p class="wind">Wind Speed: </p>
+        <div class="uv">UV Index: <div id="scale"></div></div>
+    </div>
+            </div>
+    
+    <div class="col-12">
+    <div id="fiveDay">
+        <h3>5-Day Forecast:</h3>
+        <div id="dayOne" class="card days" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <img id="iconOne">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div id="dayTwo" class="card days" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <img id="iconTwo">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div id="dayThree" class="card days" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <img id="iconThree">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div id="dayFour" class="card days" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <img id="iconFour">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div id="dayFive" class="card days" style="width: 10rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <img id="iconThree">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+       </div> 
+    </div>
+    
+</div>
 </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>

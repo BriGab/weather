@@ -26,7 +26,6 @@ $("#searchButton").on("click", function(event){
    var apiKey = "6a28bd69913964144e4ccd8e1bb2d3d2";
    var urlQuery = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
 
-
    // call to get basic weather information for a new city that has been added 
    $.ajax({
     url: urlQuery,
@@ -57,12 +56,11 @@ $("#searchButton").on("click", function(event){
         url: uvQuery,
         method: "GET"
     }).then(function(response) {
-        console.log(response)
        
         // $("#date").text(response.date_iso)
         var oval = $("#scale").text(response.value)
         var value = response.value
-        console.log(value)
+        
         if (value <= 2.4){
           oval.addClass("greenOval")
         } else if (value >= 2.5 && value <= 5.4) {
