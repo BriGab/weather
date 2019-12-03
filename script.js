@@ -4,6 +4,8 @@ var buttonContainer = $(".buttons")
 var cities = [];
 
 
+
+
 //adding new buttons when a new city is entered 
 function renderButtons(){
 buttonContainer.empty();
@@ -35,6 +37,12 @@ $("#searchButton").on("click", function(event){
 
     var iconID = response.weather[0].icon
     var iconUrl = "http://openweathermap.org/img/wn/" + iconID + "@2x.png"
+
+    var date = moment
+    .unix(response.dt)
+		.utc()
+		.format("L");
+    $("#date").append(date);
 
     $(".cityName").text(response.name) 
     $("#icon").attr("src", iconUrl)
@@ -79,7 +87,19 @@ $.ajax ({
   url: fiveDayUrl,
   method: "GET"
 }).then(function(response) {
+  console.log(response.list[1].dt)
+    var dateOne = moment
+    .unix(response.list[1].dt)
+		.utc()
+		.format("L");
+    $("#dateOne").append(dateOne);
+
+    console.log(moment)
+  $("#iconOne").attr("src", iconUrl)
+  $("#tempOne").text(response)
   console.log(response)
+
+    
 })
 
   })  

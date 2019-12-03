@@ -9,6 +9,10 @@
     <title>Document</title>
 </head>
 <body>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
     <div class="navbar-header navbar-center">
     <nav class="navbar navbar-dark bg-dark" id="myBar">
         <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
@@ -44,37 +48,42 @@
         <h3>5-Day Forecast:</h3>
         <div id="dayOne" class="card days" style="width: 10rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 id="dateOne" class="card-title"></h5>
               <img id="iconOne">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="tempOne" class="card-text"></p>
+              <p id="humidOne"></p>
             </div>
         </div>
         <div id="dayTwo" class="card days" style="width: 10rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 id="dateTwo"class="card-title"></h5>
               <img id="iconTwo">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="tempTwo" class="card-text"></p>
+              <p id="humidTwo"></p>
             </div>
         </div>
         <div id="dayThree" class="card days" style="width: 10rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 id="dateThree"class="card-title"></h5>
               <img id="iconThree">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="tempThree" class="card-text"></p>
+              <p id="humidThree"></p>
             </div>
           </div>
           <div id="dayFour" class="card days" style="width: 10rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 id="dateFour"class="card-title"></h5>
               <img id="iconFour">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="tempFour" class="card-text"></p>
+              <p id="humidFour"></p>
             </div>
           </div>
           <div id="dayFive" class="card days" style="width: 10rem;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 id="dateFive"class="card-title"></h5>
               <img id="iconThree">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p id="tempFive" class="card-text"></p>
+              <p id="humidFive"></p>
             </div>
           </div>
         </div>
@@ -83,7 +92,7 @@
     
 </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="script.js"></script>
 </body>
 
