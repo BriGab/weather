@@ -1,124 +1,144 @@
 #myNav {
     font-size: 40px;
 }
-#city {
-    padding-right: 0px;
-    margin-right: 0px;
-    margin-top: 20px;
-}
 #container {
     height: auto;
 }
-#searchButton {
-    margin-top:20px;
+/* input for entering new cities and side bar buttons*/
+#ogSearch {
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 100%;
 }
+#city {
+    width: 70%;
+}
+#searchButton {
+    display: inline-block;
+}
+
 #sideBar {
     background-color: #eff0f1;
-    height:80%;
+    height:90%;
     padding-left: 0px;
+    width: 100%;
 }
-.weatherDisplay {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: solid lightgrey 2px;
-    height: auto;
-    
-}
-.cityName {
-    margin: 10px;
-    display: inline-block
-}
-
-
 .vertButtons {
     padding: 10px;
     margin-bottom: 10px;
     text-align: left;
-}
-.buttons {
     width: 90%;
-    text-align: left;
+}
+/*Main Weather Display */
+#weatherDisplay {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid lightgrey 2px;
+    background-color: #eff0f1;
+    height: auto;
+    
+}
+.mainData {
+    margin-left: 10px;
+}
+/*dynamic class for main weather display*/
+.cityName {
+    margin: 10px;
+    display: inline-block
+}
+/*dynamic class for main weather display*/
+.topDate {
+    display: inline-block;
+}
+/*dynamic class for main weather display and index scale coloring*/
+.ovalCont {
+    display: inline-block;
+    margin-left: 10px;
 }
 .greenOval {
-    display: inline-block;
-    width: 8%;
+    display: inline-block;  
     background-color:green;
     border-radius: 50px;
     text-align: center; 
 }
 .yellowOval {
-    display: inline-block;
-    width: 8%;
+    display: inline-block;   
     background-color: yellow;
     border-radius: 50px;
     text-align: center; 
 }
 .orangeOval {
-    display: inline-block;
-    width: 8%;
+    display: inline-block;  
     background-color:orange;
     border-radius: 50px;
     text-align: center; 
 }
 .redOval {
-    display: inline-block;
-    width: 8%;
+    display: inline-block;   
     background-color:red;
     border-radius: 50px;
     text-align: center; 
 }
 .purpleOval {
     display: inline-block;
-    width: 8%;
     background-color:purple;
     border-radius: 50px;
     text-align: center; 
 }
-#date {
-    display: inline-block;
-}
-#icon {
-    display: inline-block;
-    height: 50px;
-    width: 50px;
-}
-img {
-    display: inline-block;
-}
-.header {
-    display: inline-block;
-    margin-left: 10px;
-}
-p {
-    margin-left: 20px;
-}
-.uv {
-    margin-left: 20px;
-}
+
+/* five day styling */
 #fiveDay {
     align-content: right;
+    display: flex;
+    flex-wrap: wrap;
 }
-#dayOne {
-    float: left;
-    margin-right: 10px;
+.dayCard {
+    width: 19%;
+    background: #82c4fa;
+    border: solid lightgrey 2px;
+    margin-right: 1%;
 }
-#dayTwo {
-    float: left;
-    margin-right: 10px;
+.fiveData {
+    margin: 10px;
 }
-#dayThree {
-    float: left;
-    margin-right: 10px;
-}
-#dayFour {
-    float: left;
-    margin-right: 10px;
-}
-#dayFive {
-    float: left;
-    margin-right: 10px;
-}
-.days {
-    Background-color: #007ac7;
 
+/* Media queries */
+@media only screen and (max-width: 660px) {
+    .dayCard {
+        width: 40%;
+    }
+    #sideBar {
+        height: 60%;
+    }
+
+}
+@media only screen and (max-width: 636px) {
+    #city {
+        font-size: 8pt;
+        padding: 0px;
+    }
+    #searchButton {
+        font-size: 8pt;
+        width: 15%
+    }
+}
+@media only screen and (max-width: 420px) {
+    .cityName {
+        margin-left: 1px;
+        padding-left: 1px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    #myNav {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .dayCard {
+        font-size: 12px;
+        width: 60%;
+    }
+    #sideBar {
+        height: 40%;
+    }
 }

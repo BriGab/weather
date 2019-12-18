@@ -1,99 +1,56 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/06fd106d7a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
+
     <div class="navbar-header navbar-center">
-    <nav class="navbar navbar-dark bg-dark" id="myBar">
-        <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
-    </nav>
+        <nav class="navbar navbar-dark bg-dark" id="myBar">
+            <span class="navbar-brand mb-0 h1" id="myNav">Weather Dashboard</span>
+        </nav>
     </div>
-<div class="container-fluid" id="container">
-<div class="row">
-    <div class="col-3">
-    <div id="sideBar">
-    <form class="form-inline">
-            <input class="form-control" id="city" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary btn-md form-control" id="searchButton" type="submit"><i class="fas fa-search"></i></button>
-    </form>
-    <div class="buttons btn-group-vertical"></div>
-    </div>
-    </div>
-
-
-    <div class="col-9">
+    <div class="container-fluid" id="container">
         <div class="row">
-            <div class="col-12">
-    <div class="weatherDisplay">
-        <div class="header"><h3 class="cityName">City Name: </h3><div id="date"><img id="icon"></div></div>
-        <p class="temperature">Temperature: </p>
-        <p class="humidity">Humidity: </p>
-        <p class="wind">Wind Speed: </p>
-        <div class="uv">UV Index: <div id="scale"></div></div>
-    </div>
+            <div class="col-3 px-0">
+                <div id="sideBar">
+                    <form class="form-inline">
+                        <div id="ogSearch">
+                        <input class="form-control" id="city" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary btn-md form-control fas fa-search" id="searchButton" type="submit"></button>
+                        </div>
+                    </form>
+                    <div class="buttons btn-group-vertical vertButtons"></div>
+                </div>
             </div>
-    
-    <div class="col-12">
-    <div id="fiveDay">
-        <h3>5-Day Forecast:</h3>
-        <div id="dayOne" class="card days" style="width: 10rem;">
-            <div class="card-body">
-              <h5 id="dateOne" class="card-title"></h5>
-              <img id="iconOne">
-              <p id="tempOne" class="card-text"></p>
-              <p id="humidOne"></p>
+
+
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-12">
+                        <div id="weatherDisplay"></div>
+                    </div>
+
+                    <div class="col-12">
+                        <h3>5 Day Forecast</h3>
+                        <div id="fiveDay">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="dayTwo" class="card days" style="width: 10rem;">
-            <div class="card-body">
-              <h5 id="dateTwo"class="card-title"></h5>
-              <img id="iconTwo">
-              <p id="tempTwo" class="card-text"></p>
-              <p id="humidTwo"></p>
-            </div>
-        </div>
-        <div id="dayThree" class="card days" style="width: 10rem;">
-            <div class="card-body">
-              <h5 id="dateThree"class="card-title"></h5>
-              <img id="iconThree">
-              <p id="tempThree" class="card-text"></p>
-              <p id="humidThree"></p>
-            </div>
-          </div>
-          <div id="dayFour" class="card days" style="width: 10rem;">
-            <div class="card-body">
-              <h5 id="dateFour"class="card-title"></h5>
-              <img id="iconFour">
-              <p id="tempFour" class="card-text"></p>
-              <p id="humidFour"></p>
-            </div>
-          </div>
-          <div id="dayFive" class="card days" style="width: 10rem;">
-            <div class="card-body">
-              <h5 id="dateFive"class="card-title"></h5>
-              <img id="iconThree">
-              <p id="tempFive" class="card-text"></p>
-              <p id="humidFive"></p>
-            </div>
-          </div>
-        </div>
-       </div> 
-    </div>
-    
-</div>
-</div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="script.js"></script>
 </body>
 
 </html>
