@@ -65,7 +65,7 @@ function currentWeather(cityName) {
 
     // pulling City Name 
     var citynameHeading = $("<h3>")
-    citynameHeading.addClass("cityName")
+    citynameHeading.addClass("bigCity")
     citynameHeading.text(response.name)
     mainweatherBox.append(citynameHeading)
 
@@ -170,7 +170,9 @@ function getFiveDay(cityName) {
         //Writing 5 day forecast information to the page
         var dayBox = $("<div>").addClass("dayCard")
 
-        var dateOne = date.format("L");
+        var dateOne = $("<p>")
+        dateOne.addClass("dateOnDay")
+        dateOne.text(date.format("L"));
         dayBox.append(dateOne);
 
 
