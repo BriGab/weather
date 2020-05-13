@@ -15,3 +15,5 @@ The API used in this weather dashboard is Open Weather API. There is a ton of in
 This app gave me the opportunity to push myself in generating almost an entire page dynamically. Having started out hard coding each div to hold the current weather and five day outlook I quickly discovered how much more work that created in Javascript. So I started over again creating the page as the user searches. 
 
 This was a good challange and I've learned a lot from building this app. In the future I hope to include more weather information and maybe three temperatures and times throughout the day for better planning. 
+
+![Screenshot of weather app](./images/weather.png)
